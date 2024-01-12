@@ -95,10 +95,50 @@ nav li a {
 
 /*tablet*/
 @media screen and (min-width : 576px) and (max-width : 992px) {
-    nav{
+    nav {
         flex-direction: column;
     }
+
     header {
         padding: 50px;
     }
+}
+
+/*main styles*/
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* teams style */
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.teams-tittle {
+    font-size: 3rem;
+}
+
+.teams-tittle .quick-list {
+    color: #727272;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.teams-tittle .text-features {
+    color: #FF900E;
+    font-weight: 700;
 }
