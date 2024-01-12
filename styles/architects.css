@@ -4,9 +4,21 @@
 /*shared styles*/
 * {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.btn-primary {}
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+}
 
 /*header styles*/
 header {
@@ -47,6 +59,7 @@ nav li a {
 .banner-content {
     max-width: 800px;
     text-align: center;
+    margin-top: 100px;
 }
 
 .banner-title {
@@ -61,4 +74,31 @@ nav li a {
     text-align: center;
     font-size: 1rem;
     line-height: 26px;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*responsive styles*/
+/*mobile devices*/
+@media screen and (max-width : 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width : 576px) and (max-width : 992px) {
+    nav{
+        flex-direction: column;
+    }
+    header {
+        padding: 50px;
+    }
 }
